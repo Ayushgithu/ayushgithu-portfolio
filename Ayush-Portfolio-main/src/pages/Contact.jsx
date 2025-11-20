@@ -22,14 +22,14 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_dnhnvhw", // 🔹 replace with EmailJS Service ID
-        "template_7xa1b39", // 🔹 replace with EmailJS Template ID
+        "service_r22nnz4", // 🔹 replace with EmailJS Service ID
+        "template_svi2igi", // 🔹 replace with EmailJS Template ID
         {
           from_name: form.name,
           subject: form.subject,
           message: form.message,
         },
-        "UIj6ED3E6LZDwg3Jd" // 🔹 replace with EmailJS Public Key
+        "XHD7vAMra9nAS6GJa" // 🔹 replace with EmailJS Public Key
       )
       .then(
         () => {

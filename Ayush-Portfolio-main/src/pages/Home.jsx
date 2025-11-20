@@ -225,8 +225,8 @@ export default function Home() {
             }}
           >
             {[ 
-              { label: '📍 Location', value: 'Pune,Maharastra,India' },
-              { label: '💼 Expertise', value: 'Java fullStack,Problem solving' },
+              { label: '📍 Location', value: 'Pune, Maharastra, India' },
+              { label: '💼 Expertise', value: 'Java fullStack, Problem solving' },
               { label: '📧 Contact', value: 'ayushguptajan22@gmail.com' },
             ].map((info, i) => (
               <motion.div
