@@ -28,7 +28,7 @@ const IMAGES = {
   achievements: [
     {
       id: 1,
-      caption: "Solved 1000 LeetCode questions 🏆!",
+      caption: "Solved 250+ InterViewBit DSA questions 🏆!",
       photos: ["/gallery/leet.jpeg"],
     },
   ],

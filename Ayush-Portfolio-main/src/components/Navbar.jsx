@@ -46,7 +46,7 @@ export default function Navbar() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <h1 style={{ margin: 0, fontSize: 14 }}>Ayush Gupta</h1>
           <div style={{ fontSize: 12, color: "var(--muted)" }}>
-            JAVA FULL-STACK Developer
+            Java FullStack Developer
           </div>
         </div>
       </div>

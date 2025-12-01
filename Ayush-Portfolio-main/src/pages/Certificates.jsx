@@ -12,11 +12,12 @@ const CERTS = {
       link: "/certs/flipkart.jpg",
     },
     {
-      title: "Solution Challenge",
-      org: "Google Developers",
+      title: "CCNA Certification",
+      certLink: "https://www.credly.com/badges/9c00ec46-a5d1-49cb-9b30-101d194dc399",
+      org: "Cisco",
       date: "2023",
-      img: "/certs/hack2skill.png",
-      link: "/certs/hack2skill.png",
+      img: "/certs/ccna.png",
+      link: "/certs/ccna.png",
     },
     {
       title: "ADira",
@@ -113,11 +114,35 @@ export default function Certificates() {
                     marginBottom: 12,
                   }}
                 />
+
+                {/* Title */}
                 <strong style={{ fontSize: 16 }}>{c.title}</strong>
+
+                {/* Org & Date */}
                 <div className="muted" style={{ fontSize: 13, color: "#bbb" }}>
                   {c.org} • {c.date}
                 </div>
 
+                {/* Certificate Link Below Org & Date */}
+                {c.certLink && (
+                  <a
+                    href={c.certLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "block",
+                      marginTop: 6,
+                      fontSize: 13,
+                      color: "#3b82f6",
+                      textDecoration: "underline",
+                      wordBreak: "break-all",
+                    }}
+                  >
+                    Verify Certificate
+                  </a>
+                )}
+
+                {/* View Button */}
                 <div style={{ marginTop: 12 }}>
                   <button
                     className="btn"
