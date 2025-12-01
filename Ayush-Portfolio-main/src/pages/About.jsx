@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaUniversity, FaSchool, FaGraduationCap } from "react-icons/fa";
+import { FaUniversity, FaSchool, FaGraduationCap, FaIdBadge, FaUncharted, FaUssunnah } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -113,7 +113,54 @@ const AboutMe = () => {
               gap: "1.2rem",
             }}
           >
-            {/* --- Education Card 1 --- */}
+
+             {/* --- Education Card 1 --- */}
+            <motion.div
+              whileHover={{
+                scale: 1.02,
+                boxShadow: "0 0 25px rgba(0,255,200,0.15)",
+              }}
+              transition={{ duration: 0.3 }}
+              style={{
+                background: "rgba(255,255,255,0.05)",
+                borderRadius: "14px",
+                padding: "1.5rem 2rem",
+                border: "1px solid rgba(255,255,255,0.08)",
+                boxShadow: "0 0 15px rgba(0,255,200,0.05)",
+                display: "flex",
+                alignItems: "center",
+                gap: "1.2rem",
+              }}
+            >
+              <FaUniversity size={40} color="var(--accent)" />
+              <div>
+                <h4
+                  style={{
+                    color: "var(--accent)",
+                    marginBottom: "0.4rem",
+                    fontSize: "1.25rem",
+                  }}
+                >
+                  Post Graduate Diploma in Advance Computing
+                </h4>
+                <p
+                  style={{
+                    color: "rgba(255,255,255,0.85)",
+                    marginBottom: "0.2rem",
+                  }}
+                >
+                  <strong>CDAC-ACTS</strong> — Pune,
+                  Maharastra
+                </p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>
+                  {/*Graduated | GPA: 8.4*/}
+                </p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>Aug-2025 – Present</p>
+              </div>
+            </motion.div>
+
+
+            {/* --- Education Card 2 --- */}
             <motion.div
               whileHover={{
                 scale: 1.02,
@@ -157,8 +204,8 @@ const AboutMe = () => {
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>2021 – 2024</p>
               </div>
             </motion.div>
-
-            {/* --- Education Card 2 --- */}
+         {/* 
+            // {/* --- Education Card 3 --- 
             <motion.div
               whileHover={{
                 scale: 1.02,
@@ -200,9 +247,10 @@ const AboutMe = () => {
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>Completed in 2020</p>
               </div>
-            </motion.div>
+            </motion.div> 
+         */}
 
-            {/* --- Education Card 3 --- */}
+            {/* --- Education Card 4 --- */}
             <motion.div
               whileHover={{
                 scale: 1.02,
@@ -246,7 +294,7 @@ const AboutMe = () => {
               </div>
             </motion.div>
 
-            {/* --- Education Card 4 --- */}
+            {/* --- Education Card 5 --- */}
             <motion.div
               whileHover={{
                 scale: 1.02,
