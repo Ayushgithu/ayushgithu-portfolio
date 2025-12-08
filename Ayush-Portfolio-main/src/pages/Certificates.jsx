@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const CERTS = {
   tech: [
     {
-      title: "Flipkart Hackathon",
-      org: "Flipkart",
-      date: "2022",
-      img: "/certs/flipkart.jpg",
-      link: "/certs/flipkart.jpg",
+      title: "Java FullStack Development",
+      org: "Apna College",
+      date: "2024",
+      img: "/certs/ccna.png",
+      link: "/certs/ccna.png",
     },
     {
       title: "CCNA Certification",
@@ -20,20 +20,20 @@ const CERTS = {
       link: "/certs/ccna.png",
     },
     {
-      title: "ADira",
-      org: "SCET AI Club",
-      date: "2025",
-      img: "/certs/adira.png",
-      link: "/certs/adira.png",
+      title: "Html, Css, JS for Web Developers",
+      org: "Cousera",
+      date: "2022",
+      img: "/certs/Coursera.png",
+      link: "/certs/Coursera.png",
     },
   ],
   other: [
     {
-      title: "Advanced Python",
-      org: "Udemy",
-      date: "2021",
-      img: "/certs/cert3.svg",
-      link: "/certs/cert3.svg",
+      title: "SalesForce Admin Workshop",
+      org: "Ceptra Infotech",
+      date: "2023",
+      img: "/certs/Coursera.png",
+      link: "/certs/Coursera.png",
     },
   ],
 };

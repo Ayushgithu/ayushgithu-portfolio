@@ -6,7 +6,7 @@ import photo from '../../public/Ayush.jpg'
 import githubLogo from '../../public/github.png'
 import linkedinLogo from '../../public/linkedin.png'
 import gmailLogo from '../../public/gmail.png'
-import whatsappLogo from '../../public/whatsapp.png'
+import whatsappLogo from '../../public/whatsapp.png' 
 
 
 export default function Home() {

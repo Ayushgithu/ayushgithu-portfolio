@@ -104,16 +104,16 @@ export default function Resume() {
             🎓 Education
           </h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
+            <li style={{ marginTop: 8 }}>
+              <strong>Post Graduate Diploma In Advance Computing </strong> — CDAC-ACTS Pune, Aug 2025 - Present <br />
+              {/* <span style={{ color: "#aaa" }}>Percentage: 69%</span> */}
+              <br/>
+            </li>
             <li>
               <strong>B.Tech Computer Science & Engineering</strong> — Medi-Caps Unviersity
               , 2021–2024 <br />
               <span style={{ color: "#aaa" }}>CGPA: 8.41</span>
-            </li>
-            <li style={{ marginTop: 8 }}>
-              <strong>12th Board — Vivekanand High Secondary School</strong> (M.P.
-              Board, 2020) <br />
-              <span style={{ color: "#aaa" }}>Percentage: 69%</span>
-            </li>
+            </li>    
             <li style={{ marginTop: 8 }}>
               <strong>Diploma in Computer Science & Engineering — Govt. Polytechnic College </strong> (RGPV University
               , 2018-2021) <br />
@@ -139,9 +139,10 @@ export default function Resume() {
 
              
             <li>1️⃣ CodeArena Multiplayer Coding Battle</li>
+            <li>4️⃣ Ecom Store Shopping Website</li> 
             <li>2️⃣ Medi-Food Canteen System</li>
             <li>3️⃣ HR Management Portal</li>
-            <li>4️⃣ Ecommerce Shopping</li> 
+            
           </ul>
         </motion.div>
 
