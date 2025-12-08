@@ -4,36 +4,36 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
   {
-    title: ' CodeArena MultiPlayer Coding Battle',
-    desc: 'Real-time code duel & interview platform with low-latency video calls, chat, whiteboard tools, and skill-based MCQ rounds.',
+    title: '👨🏻‍💻 CodeArena MultiPlayer Coding Battle & Interview Platform',
+    desc: 'Built a real-time coding and MCQ battle platform using Spring Boot, WebSockets, and Piston API Implemented synchronized code editor, automated code evaluation, timer rounds, and scoring logic Added video calling, screen sharing, chat, and shared whiteboard for interactive interviews. Developed room matchmaking, interviewer controls, and secure JWT-based session flow',
     ss: '/',
-    tech: ['SpringBoot', 'HTML', 'TailwindCss', 'JavaScript', 'MySql', 'WebSocket', 'PistonApi'],
+    tech: ['SpringBoot', 'Java', 'React js', 'HTML', 'Css', 'TailwindCss', 'JavaScript', 'MySql', 'Spring Email', 'WebSocket', 'WebRTC', 'PistonApi'],
     live: '#',
     code: 'https://github.com/Anshul1913/Real-Time-Collaborative-Coding-and-Communication-Platform.git'
   },
   {
-  title: 'Ecommerce Website',
-  desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
-  ss: '/mentalhealth.jpg',
-  tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
-  live: 'https://mental-health-analyzer.streamlit.app/',
-  code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
+  title: '🛒 Ecom Store',
+  desc: ' Developed a comprehensive Full Stack E-commerce Platform using Java, Spring Boot, and Spring Security for a robust backend. Implemented core e-commerce functionalities, including product catalog management (CRUD), a dynamic shopping cart, and a secure user management system with separate Admin and Customer roles. Integrated the Razorpay API for real-time payment processing, ensuring a complete, end-to-end order fulfillment and tracking system',
+  ss: '/.jpg',
+  tech: ['SpringBoot', 'Java', 'Html', 'Css', 'Javascript', 'BootStrap', 'ThymeLeaf', 'MySql', 'Spring Email', 'RazorPay API'],
+  live: '#',
+  code: 'https://github.com/Ayushgithu/E-commerce-Website.git'
   },
   {
-    title: '🤖 Indian Sign Language Interpreter',
-    desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow, enabling live sign-to-text interpretation.',
-    ss: '/ISL.png',
-    tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
+    title: '👨‍🍳 Medi-Food canteen Automation System ',
+    desc: 'Created an online food ordering system with secure login, order tracking, and payment gateway integration Users can browse digital menus, place orders, and get token numbers for collection.',
+    ss: '/.png',
+    tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySql', 'Razorpay API'],
     live: '#',
-    code: 'https://github.com/kunjdesai/ISL-Interpreter'
+    code: 'https://github.com/Ayushgithu/Medi-Food-canteen-Automation-system.git'
   },
   {
   title: '💼 Portfolio Website',
   desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
   ss: '/portfolio.jpg',
-  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
+  tech: ['React', 'HTML5', 'CSS3', 'JavaScript', 'Framer Motion', 'Tailwind CSS', ' EmailJS'],
   live: '#',
-  code: 'https://github.com/kunj2803/Kunj-Portfolio'
+  code: 'https://github.com/Ayushgithu/Portfolio.git'
   }
   
 ]
