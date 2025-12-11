@@ -10,6 +10,10 @@ It showcases my work, projects, skills, and journey as a developer passionate ab
 <img width="1903" height="1044" alt="Screenshot 2025-11-04 153204" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" />   -->
 
 
+
+![Portfolio Screenshot](./public/portfolio.png)
+
+
 ## 🚀 Features
 
 * 🎨 **Modern UI/UX** with black-based aesthetic theme
