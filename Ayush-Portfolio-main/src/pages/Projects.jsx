@@ -6,7 +6,7 @@ const PROJECTS = [
   {
     title: '👨🏻‍💻 CodeArena MultiPlayer Coding Battle & Interview Platform',
     desc: 'Built a real-time coding and MCQ battle platform using Spring Boot, WebSockets, and Piston API Implemented synchronized code editor, automated code evaluation, timer rounds, and scoring logic Added video calling, screen sharing, chat, and shared whiteboard for interactive interviews. Developed room matchmaking, interviewer controls, and secure JWT-based session flow',
-    ss: '/',
+    ss: '/codeArena.jpg',
     tech: ['SpringBoot', 'Java', 'React js', 'HTML', 'Css', 'TailwindCss', 'JavaScript', 'MySql', 'Spring Email', 'WebSocket', 'WebRTC', 'PistonApi'],
     live: '#',
     code: 'https://github.com/Anshul1913/Real-Time-Collaborative-Coding-and-Communication-Platform.git'
@@ -22,7 +22,7 @@ const PROJECTS = [
   {
     title: '👨‍🍳 Medi-Food canteen Automation System ',
     desc: 'Created an online food ordering system with secure login, order tracking, and payment gateway integration Users can browse digital menus, place orders, and get token numbers for collection.',
-    ss: '/.png',
+    ss: '/medifood.png',
     tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySql', 'Razorpay API'],
     live: '#',
     code: 'https://github.com/Ayushgithu/Medi-Food-canteen-Automation-system.git'
@@ -30,7 +30,7 @@ const PROJECTS = [
   {
   title: '💼 Portfolio Website',
   desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: '/portfolio.jpg',
+  ss: '/portfolio.png',
   tech: ['React', 'HTML5', 'CSS3', 'JavaScript', 'Framer Motion', 'Tailwind CSS', ' EmailJS'],
   live: '#',
   code: 'https://github.com/Ayushgithu/Portfolio.git'
