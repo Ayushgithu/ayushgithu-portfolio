@@ -1,77 +1,44 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// ✅ Certificates data (added URLs for View button)
-const CERTS = {
-  tech: [
-    {
-      title: "Java FullStack Development",
-      org: "Apna College",
-      date: "2024",
-      img: "/certs/AyushApna.png",
-      link: "/certs/AyushApna.png",
-    },
-    {
-      title: "CCNA Certification",
-      certLink: "https://www.credly.com/badges/9c00ec46-a5d1-49cb-9b30-101d194dc399",
-      org: "Cisco",
-      date: "2023",
-      img: "/certs/ccna.png",
-      link: "/certs/ccna.png",
-    },
-    {
-      title: "Html, Css, JS for Web Developers",
-      org: "Cousera",
-      date: "2022",
-      img: "/certs/Coursera.png",
-      link: "/certs/Coursera.png",
-    },
-  ],
-  other: [
-    {
-      title: "SalesForce Admin Workshop",
-      org: "Ceptra Infotech",
-      date: "2023",
-      img: "/certs/Coursera.png",
-      link: "/certs/Coursera.png",
-    },
-  ],
-};
+// ✅ Tech Certificates only
+const CERTS = [
+  {
+    title: "Java FullStack Development",
+    org: "Apna College",
+    date: "2024",
+    img: "/certs/AyushApna.png",
+    link: "/certs/AyushApna.png",
+  },
+  {
+    title: "CCNA Certification",
+    certLink: "https://www.credly.com/badges/9c00ec46-a5d1-49cb-9b30-101d194dc399",
+    org: "Cisco",
+    date: "2023",
+    img: "/certs/ccna.png",
+    link: "/certs/ccna.png",
+  },
+  {
+    title: "HTML, CSS & JavaScript for Web Developers",
+    org: "Coursera",
+    date: "2022",
+    img: "/certs/Coursera.png",
+    link: "/certs/Coursera.png",
+  },
+];
 
 export default function Certificates() {
-  const [tab, setTab] = useState("tech");
   const [selectedCert, setSelectedCert] = useState(null);
 
   return (
     <section className="container" style={{ padding: "40px 0" }}>
       <div className="card" style={{ background: "#111", borderRadius: 12, padding: 24 }}>
-        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>Certificates 🏅</h2>
+        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>
+          Certificates 🏅
+        </h2>
         <p className="lead" style={{ color: "#aaa" }}>
-          Explore my certifications — technical & others.
+          My technical certifications and achievements.
         </p>
-
-        {/* Tabs */}
-        <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
-          {["tech", "other"].map((t) => (
-            <button
-              key={t}
-              onClick={() => setTab(t)}
-              className={tab === t ? "tab active" : "tab"}
-              style={{
-                padding: "8px 18px",
-                borderRadius: 8,
-                border: "none",
-                cursor: "pointer",
-                background: tab === t ? "#007bff" : "#333",
-                color: "#fff",
-                fontWeight: 500,
-                transition: "0.3s",
-              }}
-            >
-              {t === "tech" ? "Tech" : "Others"}
-            </button>
-          ))}
-        </div>
 
         {/* Certificates Grid */}
         <div
@@ -83,14 +50,13 @@ export default function Certificates() {
             gap: 20,
           }}
         >
-          <AnimatePresence mode="wait">
-            {CERTS[tab].map((c, idx) => (
+          <AnimatePresence>
+            {CERTS.map((c, idx) => (
               <motion.div
                 key={c.title}
                 className="cert card"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
                 whileHover={{
                   scale: 1.03,
@@ -115,15 +81,12 @@ export default function Certificates() {
                   }}
                 />
 
-                {/* Title */}
                 <strong style={{ fontSize: 16 }}>{c.title}</strong>
 
-                {/* Org & Date */}
-                <div className="muted" style={{ fontSize: 13, color: "#bbb" }}>
+                <div style={{ fontSize: 13, color: "#bbb" }}>
                   {c.org} • {c.date}
                 </div>
 
-                {/* Certificate Link Below Org & Date */}
                 {c.certLink && (
                   <a
                     href={c.certLink}
@@ -135,17 +98,14 @@ export default function Certificates() {
                       fontSize: 13,
                       color: "#3b82f6",
                       textDecoration: "underline",
-                      wordBreak: "break-all",
                     }}
                   >
                     Verify Certificate
                   </a>
                 )}
 
-                {/* View Button */}
                 <div style={{ marginTop: 12 }}>
                   <button
-                    className="btn"
                     onClick={() => setSelectedCert(c)}
                     style={{
                       background: "#007bff",
@@ -169,23 +129,19 @@ export default function Certificates() {
       <AnimatePresence>
         {selectedCert && (
           <motion.div
-            className="modal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            onClick={() => setSelectedCert(null)}
             style={{
               position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
+              inset: 0,
               background: "rgba(0,0,0,0.8)",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               zIndex: 1000,
             }}
-            onClick={() => setSelectedCert(null)}
           >
             <motion.img
               src={selectedCert.img}
@@ -197,7 +153,6 @@ export default function Certificates() {
                 maxWidth: "90%",
                 maxHeight: "85%",
                 borderRadius: 10,
-                boxShadow: "0 0 25px rgba(255,255,255,0.2)",
               }}
               onClick={(e) => e.stopPropagation()}
             />
