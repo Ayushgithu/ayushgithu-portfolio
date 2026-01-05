@@ -59,7 +59,7 @@ export default function Resume() {
               B.Tech — Computer Science & Engineering | Medi-Caps University
             </p>
             <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              📍 Pune, Maharastra
+              📍 Indore, Madhya Pradesh
             </p>
             <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
               ✉️ ayushguptajan22@gmail.com | 📞 +91-7415557442
@@ -104,11 +104,11 @@ export default function Resume() {
             🎓 Education
           </h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li style={{ marginTop: 8 }}>
+            {/* <li style={{ marginTop: 8 }}>
               <strong>Post Graduate Diploma In Advance Computing </strong> — CDAC-ACTS Pune, Aug 2025 - Present <br />
-              {/* <span style={{ color: "#aaa" }}>Percentage: 69%</span> */}
+              {/* <span style={{ color: "#aaa" }}>Percentage: 69%</span> 
               <br/>
-            </li>
+            </li> */}
             <li>
               <strong>B.Tech Computer Science & Engineering</strong> — Medi-Caps Unviersity
               , 2021–2024 <br />

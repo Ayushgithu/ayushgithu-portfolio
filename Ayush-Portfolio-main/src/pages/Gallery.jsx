@@ -7,34 +7,26 @@ const IMAGES = {
   personal: [
     {
       id: 1,
-      caption: "Lost in the beauty of the misty forest 🌲🌫️",
-      photos: ["/gallery/matheran.jpg", "/gallery/matheran2.jpg"],
+      caption: "Lost in the beauty of mist-covered hills 🌫️🏔️ Where the air feels lighter and time slows down 🌿",
+      photos: ["/gallery/UK1.jpeg", "/gallery/UK2.jpeg", "/gallery/UK3.jpeg", "/gallery/UK4.jpeg", "/gallery/UK5.jpeg", "/gallery/UK6.jpeg"],
     },
     {
       id: 2,
       caption:
-        "Weekend getaway to clear my head 🌄 Sometimes inspiration strikes when you’re away from the screen.",
-      photos: ["/gallery/lonawala.jpg", "/gallery/lonawala2.jpg"],
-    },
-  ],
-  projects: [
-    {
-      id: 1,
-      caption:
-        "It’s an AI-powered tool that understands what someone might be feeling based on their words.",
-      photos: ["/gallery/m.png", "/gallery/m2.jpeg"],
+        "When the workspace feels like home, ideas come easier ☕",
+      photos: ["/gallery/work1.jpeg", "/gallery/work2.jpeg", "/gallery/work3.jpeg"],
     },
   ],
   achievements: [
     {
       id: 1,
-      caption: "Solved 250+ InterViewBit DSA questions 🏆!",
-      photos: ["/gallery/leet.jpeg"],
+      caption: "Solved 250+ DSA questions🏆!",
+      photos: ["/gallery/dsa.png"],
     },
   ],
 };
 
-// ✨ Animation Variants
+// Page Animation
 const pageVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -54,7 +46,7 @@ const childVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-// ✨ Tab Switching Animations
+// Tab Switch Animation
 const tabContentVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.98 },
   visible: {
@@ -94,16 +86,15 @@ export default function Gallery() {
       variants={pageVariants}
       initial="hidden"
       animate="visible"
-      exit="hidden"
     >
-      {/* 🌟 Title */}
+      {/* Title */}
       <motion.h2 className="gallery-title" variants={childVariants}>
         Gallery
       </motion.h2>
 
-      {/* 🧭 Tabs */}
+      {/* Tabs */}
       <motion.div className="tab-buttons" variants={childVariants}>
-        {["personal", "projects", "achievements"].map((type) => (
+        {["personal", "achievements"].map((type) => (
           <motion.button
             key={type}
             className={`tab ${tab === type ? "active" : ""}`}
@@ -116,10 +107,10 @@ export default function Gallery() {
         ))}
       </motion.div>
 
-      {/* 🖼️ Posts with Animation on Tab Switch */}
+      {/* Posts */}
       <AnimatePresence mode="wait">
         <motion.div
-          key={tab} // Important for AnimatePresence to detect tab change
+          key={tab}
           className="post-feed"
           variants={tabContentVariants}
           initial="hidden"
@@ -134,6 +125,7 @@ export default function Gallery() {
               whileHover={{ y: -4 }}
             >
               <p className="caption">{post.caption}</p>
+
               <div
                 className={`photo-grid ${
                   post.photos.length > 1 ? "multi" : "single"
@@ -156,25 +148,22 @@ export default function Gallery() {
         </motion.div>
       </AnimatePresence>
 
-      {/* 🔍 Zoom Overlay */}
+      {/* Zoom Overlay */}
       <AnimatePresence>
         {zoom.img && (
           <motion.div
             className="zoom-overlay"
-            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            animate={{ opacity: 1, backdropFilter: "blur(6px)" }}
-            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            transition={{ duration: 0.4 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
             <motion.img
-              key={zoom.img}
               src={zoom.img}
               alt="zoom"
               className="zoom-img"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.9 }}
             />
 
             {zoom.post?.photos.length > 1 && (
@@ -187,6 +176,7 @@ export default function Gallery() {
                 </button>
               </>
             )}
+
             <button className="close-btn" onClick={closeZoom}>
               <X size={28} />
             </button>

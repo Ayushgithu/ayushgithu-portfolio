@@ -22,14 +22,14 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_r22nnz4", // 🔹 replace with EmailJS Service ID
-        "template_svi2igi", // 🔹 replace with EmailJS Template ID
+        "service_r22nnz4", //  replace with EmailJS Service ID
+        "template_svi2igi", //  replace with EmailJS Template ID
         {
           from_name: form.name,
           subject: form.subject,
           message: form.message,
         },
-        "XHD7vAMra9nAS6GJa" // 🔹 replace with EmailJS Public Key
+        "XHD7vAMra9nAS6GJa" //  replace with EmailJS Public Key
       )
       .then(
         () => {
@@ -99,7 +99,7 @@ export default function Contact() {
         Whether it’s a new project, a collaboration, or just to say hi — I’d love to hear from you!
       </motion.p>
 
-      {/* 🌟 Quick Links */}
+      {/*  Quick Links */}
       <motion.div
         style={{
           display: "flex",
@@ -141,7 +141,7 @@ export default function Contact() {
         ))}
       </motion.div>
 
-      {/* 💌 Contact Form */}
+      {/*  Contact Form */}
       <motion.form
         onSubmit={handleSubmit}
         initial={{ opacity: 0, y: 30 }}

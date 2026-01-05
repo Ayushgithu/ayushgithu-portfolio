@@ -114,7 +114,8 @@ const AboutMe = () => {
             }}
           >
 
-             {/* --- Education Card 1 --- */}
+          {/* 
+             {/* --- Education Card 1 --- 
             <motion.div
               whileHover={{
                 scale: 1.02,
@@ -153,11 +154,13 @@ const AboutMe = () => {
                   Maharastra
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  {/*Graduated | GPA: 8.4*/}
+                  {/*Graduated | GPA: 8.4
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>Aug-2025 – Present</p>
               </div>
             </motion.div>
+
+          */}  
 
 
             {/* --- Education Card 2 --- */}
