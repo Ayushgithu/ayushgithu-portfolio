@@ -8,8 +8,8 @@ const CERTS = {
       title: "Java FullStack Development",
       org: "Apna College",
       date: "2024",
-      img: "/certs/ccna.png",
-      link: "/certs/ccna.png",
+      img: "/certs/AyushApna.png",
+      link: "/certs/AyushApna.png",
     },
     {
       title: "CCNA Certification",
