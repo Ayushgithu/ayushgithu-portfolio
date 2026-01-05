@@ -81,7 +81,7 @@ export default function Contact() {
           color: "transparent",
         }}
       >
-        Let’s Connect & Collaborate 🤝 thank you
+        Let’s Connect & Collaborate 🤝
       </motion.h1>
 
       <motion.p
