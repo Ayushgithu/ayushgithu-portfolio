@@ -18,8 +18,7 @@ const SKILLS = [
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
   { name: "FramerMotion", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg" },
-  { name: "NodeJS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-
+  
 
 ];
 
@@ -28,7 +27,7 @@ const ROWS = [
     { title: "Programming Languages", items: [ "Java", "C++", "c#"] },
     { title: "Web Technologies", items: ["HTML", "CSS", "JavaScript",] },
     { title: "Databases & Tools", items: ["MySQL", "MongoDB", "Git", "GitHub", "IntelliJ IDEA", "VS Code", "Spring Initializer",] },
-    { title: "Frameworks & Libraries", items: ["Spring-Boot","ReactJS", "NodeJS", "ExpressJS", "TailwindCSS", "BootStrap", "Framer Motion",] },
+    { title: "Frameworks & Libraries", items: ["SpringBoot","ReactJS", "TailwindCSS", "BootStrap", "Framer Motion",] },
   ],
   [
     {
