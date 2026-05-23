@@ -4,7 +4,7 @@ import { Github } from 'lucide-react'
 
 const PROJECTS = [
   {
-    title: '👨🏻‍💻 CodeArena MultiPlayer Coding Battle & Quiz Platform',
+    title: '👨🏻‍💻 CodeArena MultiPlayer Coding & Quiz Battle Platform',
     desc: 'Built a real-time coding and MCQ battle platform using Spring Boot, WebSockets, and Piston API. Implemented synchronized code editor, automated code evaluation, timer rounds, and scoring logic. Added video calling, screen sharing, chat, and shared whiteboard for interactive interviews. Developed room matchmaking, interviewer controls, and secure JWT-based session flow.',
     ss: '/codeArena.jpg',
     tech: [
