@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "title": "Why I Love Building Java & Web Experiences",
+    "text": "Turning ideas into clean, functional products is what motivates me. With Java, Spring Boot, and modern web tools, I love creating systems that feel intuitive, reliable, and meaningful for real users. Building backend services is a core passion of mine, and I strive to make every endpoint efficient and secure.",
+    "category": "Java",
+    "link": "https://github.com/Ayushgithu/"
+  },
+  {
+    "id": 2,
+    "title": "My Thoughts on Design & Aesthetics",
+    "text": "For me, design lives at the intersection of logic and feeling. Clean minimalism and deep dark tones fuel my vision to build interfaces that are sleek, expressive, and ahead of their time.",
+    "category": "Design",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "title": "Balancing Tech and Creativity",
+    "text": "Balancing technology and creativity has shown me that innovation is a form of expression. Every project becomes a thoughtful choreography of ideas and solutions.",
+    "category": "Life",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "title": "The Beauty of Simple Code",
+    "text": "Clean code isn’t just about fewer lines — it’s about clarity. Elegance in code feels like poetry to me — each function should have rhythm and purpose.",
+    "category": "Java",
+    "link": "https://github.com/Ayushgithu/"
+  },
+  {
+    "id": 5,
+    "title": "Mastering Java Concurrency for High-Performance Apps",
+    "text": "Concurrency is the secret sauce of scalable Java applications. In this post, I break down the basics of Threading, the Executor Framework, and why understanding memory consistency is a game-changer for any backend developer.",
+    "category": "Java",
+    "link": "https://github.com/Ayushgithu/"
+  },
+  {
+    "id": 6,
+    "title": "Why I Solve DSA Problems Daily",
+    "text": "Data Structures and Algorithms are more than just interview prep—they are the foundation of problem-solving. Daily practice has sharpened my logic and helped me write more efficient code, whether I'm working on a microservice or a simple UI component.",
+    "category": "Java",
+    "link": ""
+  },
+  {
+    "id": 7,
+    "title": "Transitioning from Monolith to Microservices",
+    "text": "Breaking down a monolithic application into microservices is challenging but incredibly rewarding. I share my journey of using Spring Boot, Eureka, and API Gateways to scale systems for real-world traffic.",
+    "category": "Tutorial",
+    "link": "https://github.com/Ayushgithu/"
+  },
+  {
+    "id": 8,
+    "title": "The Art of Writing Clean React Components",
+    "text": "React is powerful, but it's easy to get lost in 'spaghetti' code. I discuss my best practices for component composition, managing state effectively, and keeping the UI layer as clean as the backend logic.",
+    "category": "Design",
+    "link": ""
+  }
+
+]
